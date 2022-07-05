@@ -24,7 +24,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto Rocketseat Redes Sociais  
 
-O Redes Sociais é uma aplicação para ter acesso a todos os links da rede sociais do usuário.
+O Rede Sociais é uma aplicação para ter acesso a todos os links da rede sociais do usuário.
 
 
 ## 🔖 Layout
