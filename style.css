@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -8,10 +9,78 @@ a {
     text-decoration: none;
 }
 
+html {
+    --bg-color: #121214;
+    --text-color: #ffffff;
+}
+
+
 body {
-    background: #121214;
+    --bg-color: #ececec;
+    --text-color:#000000;
     font-family: 'Roboto', sans-serif;
 }
+
+body.dark {
+    background: #121214;;
+    color: #ffffff;
+    transition: background 0.2s linear;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tudo {
+    display: flex;
+    align-items: center;
+    justify-content: sapce-between;
+    padding: 2.5rem;
+}
+
+.checkbox {
+    opacity: 0;
+    
+  }
+  
+  .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+  
+  }
+  
+  
+  .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+  }
+
 .container {
     text-align: center;
     width: 300px;
@@ -35,14 +104,12 @@ h1 {
     font-size: 32px;
     margin-top: 24px;
     margin-bottom: 8px;
-    color: #ffffff;
 } 
 
 
 .username {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
-    color: #ffffff;
     opacity: 0.8;
     font-size: 18px;
 }
@@ -73,7 +140,6 @@ ul li a:hover {
 }
 
 footer {
-    color: #ffffff;
     font-weight: 500;
     font-size: 12px;
     opacity: 0.9;
