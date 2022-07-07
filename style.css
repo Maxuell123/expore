@@ -104,6 +104,13 @@ h1 {
     font-size: 32px;
     margin-top: 24px;
     margin-bottom: 8px;
+    background-color: #2597ff;
+    background-image: linear-gradient(45deg, #c41d54, #917bc6);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 } 
 
 
